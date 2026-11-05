@@ -143,6 +143,21 @@
   background-image: var(--gradient-band);
 }
 
+@utility bg-grid {
+  background-image:
+    linear-gradient(color-mix(in oklab, var(--on-dark) 8%, transparent) 1px, transparent 1px),
+    linear-gradient(90deg, color-mix(in oklab, var(--on-dark) 8%, transparent) 1px, transparent 1px);
+  background-size: 48px 48px;
+  mask-image: linear-gradient(100deg, black 20%, transparent 85%);
+}
+
+@utility bg-grid-light {
+  background-image:
+    linear-gradient(color-mix(in oklab, var(--primary) 7%, transparent) 1px, transparent 1px),
+    linear-gradient(90deg, color-mix(in oklab, var(--primary) 7%, transparent) 1px, transparent 1px);
+  background-size: 48px 48px;
+}
+
 @utility shadow-card {
   box-shadow: var(--shadow-card);
 }
